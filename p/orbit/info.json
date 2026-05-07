@@ -7,6 +7,7 @@
   "description": "Orbit Ending with falling orbs from the bottom to your screen.",
   "icon_file": "icon.ico",
   "files": [
+    {"label": "Download ZIP (Recommended)", "filename": "orbit.zip"},
     {"label": "Download EXE", "filename": "orbit.exe"}
   ]
 }
