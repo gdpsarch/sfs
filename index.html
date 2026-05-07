@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFS - Special File Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">SFS_Client.exe - Special File Service</div>
+            <div class="title-bar-controls">
+                <div class="title-btn">_</div>
+                <div class="title-btn">□</div>
+                <div class="title-btn">✕</div>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="menu-item"><span>F</span>ile</div>
+            <div class="menu-item"><span>V</span>iew</div>
+            <div class="menu-item"><span>H</span>elp</div>
+        </div>
+
+        <div class="window-content">
+            <div style="margin-bottom: 10px; font-weight: bold;">Available Encrypted Packages:</div>
+            
+            <div id="sfs-container">
+                <div style="padding: 10px; font-family: monospace;">Scanning filesystem...</div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-panel" id="objectsCount">Objects: 0</div>
+            <div class="status-panel">System: Online</div>
+            <div class="status-panel">SFS v1.0</div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

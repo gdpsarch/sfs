@@ -1,0 +1,12 @@
+{
+  "name": "Orbit Ending",
+  "author": "Artur",
+  "author_link": "", 
+  "date": "07.05.2026",
+  "version": "1.0",
+  "description": "Orbit Ending with falling orbs from the bottom to your screen.",
+  "icon_file": "icon.ico",
+  "files": [
+    {"label": "Download EXE", "filename": "orbit.exe"}
+  ]
+}
