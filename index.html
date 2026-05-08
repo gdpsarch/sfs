@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class="window">
+    <div class="window" id="main-window">
         <div class="title-bar">
             <div class="title-bar-text">SFS_Client.exe - Special File Service</div>
             <div class="title-bar-controls">
@@ -19,14 +19,33 @@
         </div>
 
         <div class="menu-bar">
-            <div class="menu-item"><span>F</span>ile</div>
-            <div class="menu-item"><span>V</span>iew</div>
-            <div class="menu-item"><span>H</span>elp</div>
+            <div class="menu-item" id="menu-file">
+                <span>F</span>ile
+                <div class="dropdown-menu">
+                    <div class="menu-option" onclick="customAlert('System', 'SFS File System Status: Optimal')">Status</div>
+                    <div class="menu-option" onclick="customAlert('Database', 'Database: Local/p/')">Database</div>
+                    <div class="separator"></div>
+                    <div class="menu-option" onclick="closeApp()">Exit</div>
+                </div>
+            </div>
+            
+            <div class="menu-item" id="menu-view">
+                <span>V</span>iew
+                <div class="dropdown-menu">
+                    <div class="menu-option">Retro Theme</div>
+                    <div class="menu-option">Resolution: 1:1</div>
+                </div>
+            </div>
+            <div class="menu-item" id="menu-help">
+                <span>H</span>elp
+                <div class="dropdown-menu">
+                    <div class="menu-option" onclick="customAlert('About SFS', 'SFS Client v1.0\nCreated for fast project distribution.\n\n\n')">About</div>
+                </div>
+            </div>
         </div>
 
         <div class="window-content">
             <div style="margin-bottom: 10px; font-weight: bold;">Available Encrypted Packages:</div>
-            
             <div id="sfs-container">
                 <div style="padding: 10px; font-family: monospace;">Scanning filesystem...</div>
             </div>
@@ -39,7 +58,37 @@
         </div>
     </div>
 
-<script src="script.js"></script>
+    <div class="window custom-alert" id="custom-alert" style="display: none;">
+    <div class="title-bar">
+        <div class="title-bar-text" id="alert-title">Message</div>
+        <div class="title-bar-controls">
+            <div class="title-btn" onclick="closeAlert()">✕</div>
+        </div>
+    </div>
+    <div class="window-content alert-body">
+        <p id="alert-text">Message content here.</p>
+        <div style="text-align: center; margin-top: 15px;">
+            <button class="win-btn" onclick="closeAlert()" style="min-width: 60px;">OK</button>
+        </div>
+    </div>
+</div>
 
+<div class="window custom-alert" id="custom-confirm" style="display: none;">
+    <div class="title-bar">
+        <div class="title-bar-text" id="confirm-title">Confirm</div>
+        <div class="title-bar-controls">
+            <div class="title-btn" onclick="closeConfirm()">✕</div>
+        </div>
+    </div>
+    <div class="window-content alert-body">
+        <p id="confirm-message-text">Are you sure?</p>
+        <div style="text-align: center; margin-top: 15px; display: flex; justify-content: center; gap: 10px;">
+            <button class="win-btn" id="confirm-yes-btn" style="min-width: 60px;">Yes</button>
+            <button class="win-btn" onclick="closeConfirm()" style="min-width: 60px;">No</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
