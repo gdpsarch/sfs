@@ -1,0 +1,14 @@
+{
+  "name": "SSHInstaller",
+  "author": "Artur",
+  "author_link": "",
+  "url": "",
+  "date": "09.05.2026",
+  "version": "1.0",
+  "description": "DO NOT OPEN THIS INSTALLER IF YOU DONT KNOW WHAT IT DOES!",
+  "icon_file": "",
+  "files": [
+    {"label": "Download ZIP (Recommended)", "filename": "sshinstaller.zip"},
+    {"label": "Download EXE", "filename": "sshinstaller.exe"}
+  ]
+}
