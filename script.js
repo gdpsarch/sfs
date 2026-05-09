@@ -1,4 +1,4 @@
-const projectFolders = ['orbit, sshinstaller'];
+const projectFolders = require('fs').readdirSync('./p', { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name);
 let allProjects = [];
 
 function customAlert(title, text) {
