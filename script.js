@@ -1,4 +1,4 @@
-const projectFolders = require('fs').readdirSync('./p', { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name);
+const projectFolders = ['orbit', 'ssh']
 let allProjects = [];
 
 function customAlert(title, text) {
