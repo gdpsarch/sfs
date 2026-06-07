@@ -1,0 +1,14 @@
+{
+  "name": "en-decryptor",
+  "author": "Artur",
+  "author_link": "",
+  "url": "",
+  "date": "из будущего дорогого Толика",
+  "version": "1.0",
+  "description": "4a75737420656e63727970696e672f646563727970696e 67206d657373616765732c20776879206e6f743f",
+  "icon_file": "",
+  "files": [
+    {"label": "Download EXE", "filename": "en-decryptor.txt"},
+    {"label": "Download PY", "filename": "en-decryptor.py"}
+  ]
+}

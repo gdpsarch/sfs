@@ -1,4 +1,4 @@
-const projectFolders = ['orbit', 'ssh']
+const projectFolders = ['orbit', 'ssh', 'enc']
 let allProjects = [];
 
 function customAlert(title, text) {
